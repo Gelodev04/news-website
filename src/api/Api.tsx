@@ -13,7 +13,8 @@ interface News {
 }
 
 export default async function Api(): Promise<News | null> {
-  const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+  const apiKey = process.env.API_KEY;
+  
 
   if (!apiKey) {
     console.error("API key is missing");
