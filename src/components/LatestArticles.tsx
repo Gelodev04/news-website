@@ -5,11 +5,11 @@ import Api from "@/api/Api";
 import Image from "next/image";
 
 interface Article {
-  publishedAt: string;
   title: string;
   description: string;
   url: string;
   urlToImage: string | null;
+  publishedAt: string;
 }
 
 export default function LatestArticles() {
