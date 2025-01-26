@@ -5,21 +5,21 @@ export default async function Featured() {
     {
       title: "Article 1",
       description: "Description 1",
-      url: "https://www.example.com",
+      url: "",
       urlToImage: "/images/image1.jpg",
       publishedAt: "2022-01-01",
     },
     {
       title: "Article 2",
       description: "Description 2",
-      url: "https://www.example.com",
+      url: "",
       urlToImage: "/images/image1.jpg",
       publishedAt: "2022-01-02",
     },
     {
         title: "Article 3",
         description: "Description 3",
-        url: "https://www.example.com",
+        url: "",
         urlToImage: "/images/image1.jpg",
         publishedAt: "2022-01-02",
       },
@@ -34,8 +34,8 @@ export default async function Featured() {
             <Image
               src={article.urlToImage}
               alt="Article image"
-              width={500} // Set the width explicitly
-              height={500} // Set the height explicitly
+              width={500} 
+              height={500} 
               className="rounded object-cover"
             />
 
