@@ -3,6 +3,7 @@ import axios from 'axios';
 import { CustomNavbar } from '../components/Navbar';
 import FirstSection from '@/components/FirstSection';
 import LatestArticles from '@/components/LatestArticles';
+import Featured from '@/components/Featured';
 
 interface Article {
   title: string;
@@ -22,6 +23,7 @@ export default async function Home() {
     <CustomNavbar/>
     <FirstSection/>
     <LatestArticles/>
+    <Featured/>
     <div className='h-screen'></div>
     </>
   )

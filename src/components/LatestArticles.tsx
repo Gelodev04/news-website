@@ -7,11 +7,11 @@ export default async function LatestArticles() {
   return (
     <div className="text-white mt-16 mx-4 flex flex-col items-center">
       <h1 className="text-5xl text-center">Latest Articles</h1>
-      <ul className="mt-10 flex flex-col gap-[3rem]">
-        {news?.articles.slice(0, 3).map((article) => (
-          <li key={article.title}>
+      <ul className="mt-10 flex flex-col gap-[3rem] justify-center items-center ">
+        {news?.articles.slice(0, 5).map((article) => (
+          <li className="flex flex-col justify-center  max-w-[600px]" key={article.title}>
             <Image
-            className="rounded"
+            className="rounded w-full h-[400px] object-cover"
               src={article.urlToImage}
               alt="Article image"
               width={500}
@@ -25,7 +25,7 @@ export default async function LatestArticles() {
           </li>
         ))}
       </ul>
-      <button className="bg-[#6cff22] py-3 px-7 rounded mt-10 uppercase text-black">
+      <button className="bg-[#6cff22] py-3 px-7 rounded mt-10 uppercase text-black text-sm">
         See more
       </button>
     </div>
