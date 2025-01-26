@@ -9,6 +9,7 @@ import {
   NavbarMenuItem,
 } from "@heroui/navbar";
 import { MenuSvg } from "@/svgicons/Svg";
+import Link from "next/link";
 
 export const CustomNavbar = () => {
   const navItems = [
@@ -20,14 +21,23 @@ export const CustomNavbar = () => {
     { title: "Contact", url: "/" },
   ];
   return (
-    <Navbar isBlurred={false} className="py-3 border-b border-gray-400 bg-black">
-      <NavbarBrand className="text-white text-2xl">Latest News</NavbarBrand>
+    <Navbar
+      isBlurred={false}
+      className="py-3 border-b border-gray-400 bg-black"
+    >
+      <NavbarBrand className="text-white text-2xl">
+        <Link href='/'>Latest News</Link>
+      </NavbarBrand>
       <ul className=" text-white hidden lg:flex gap-5">
         {navItems.map((item, index) => (
-          <li key={index} className="">{item.title}</li>
+          <li key={index} className="">
+            {item.title}
+          </li>
         ))}
       </ul>
-      <div className="lg:hidden"><MenuSvg/></div>
+      <div className="lg:hidden">
+        <MenuSvg />
+      </div>
     </Navbar>
   );
 };

@@ -12,6 +12,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "*.gov", 
       },
+      {
+        protocol: "https",
+        hostname: "*.gov", 
+      },
+      {
+        protocol: "https",
+        hostname: "ichef.bbci.co.uk"
+      },
     ],
   },
 };

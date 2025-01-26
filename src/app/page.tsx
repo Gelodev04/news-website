@@ -1,6 +1,6 @@
 // app/page.tsx
 import axios from 'axios';
-import { CustomNavbar } from '../components/Navbar';
+import { CustomNavbar } from '@/components/Navbar';
 import FirstSection from '@/components/FirstSection';
 import LatestArticles from '@/components/LatestArticles';
 import Featured from '@/components/Featured';
