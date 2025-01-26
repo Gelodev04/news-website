@@ -17,14 +17,22 @@ export default function FirstSection() {
       </div>
 
       <div
-        className="relative h-[450px] w-[450px]  rounded"
-        style={{
-          backgroundImage: "url(/images/image1.jpg)",
-          backgroundPosition: "65%",
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed",
-        }}
-      ></div>
+      className="relative h-[450px] w-[450px] rounded"
+      style={{
+        backgroundPosition: "65%",
+        backgroundAttachment: "fixed",
+        overflow: "hidden", // Ensures rounded corners work
+      }}
+    >
+      <Image
+        src="/images/image1.jpg"
+        alt="Background Image"
+        layout="fill" 
+        objectFit="cover" 
+        objectPosition="100%" 
+        className="rounded" 
+      />
+    </div>
     </section>
   );
 }

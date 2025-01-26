@@ -3,7 +3,7 @@ import React from "react";
 export const MenuSvg = () => {
   return (
     <svg 
-    className="cursor-pointer"
+    className="cursor-pointer "
     width={25}
      viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>

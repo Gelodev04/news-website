@@ -22,12 +22,12 @@ export const CustomNavbar = () => {
   return (
     <Navbar isBlurred={false} className="py-3 border-b border-gray-400 bg-black">
       <NavbarBrand className="text-white text-2xl">Latest News</NavbarBrand>
-      <ul className=" text-white hidden md:flex">
+      <ul className=" text-white hidden lg:flex gap-5">
         {navItems.map((item, index) => (
-          <li key={index}>{item.title}</li>
+          <li key={index} className="">{item.title}</li>
         ))}
       </ul>
-      <MenuSvg/>
+      <div className="lg:hidden"><MenuSvg/></div>
     </Navbar>
   );
 };
