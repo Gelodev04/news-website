@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { fetchNews } from "../api/Api";
+import Link from "next/link";
 
 export default async function LatestArticles() {
   const news = await fetchNews();
@@ -12,7 +13,7 @@ export default async function LatestArticles() {
           <li className="flex flex-col justify-center  max-w-[600px]" key={article.title}>
             <Image
             className="rounded w-full h-[400px] object-cover"
-              src={article.urlToImage}
+              src={article.urlToImage || "/images/image1.jpg"}
               alt="Article image"
               width={500}
               height={500}/>
@@ -26,7 +27,7 @@ export default async function LatestArticles() {
         ))}
       </ul>
       <button className="bg-[#6cff22] py-3 px-7 rounded mt-10 uppercase text-black text-sm">
-        See more
+        <Link href={'/MoreNews'}>See more</Link>
       </button>
     </div>
   );

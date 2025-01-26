@@ -5,7 +5,7 @@ interface Article {
   description: string;
   url: string;
   publishedAt: string;
-  urlToImage: string;
+  urlToImage: string | null;
 }
 
 interface News {
